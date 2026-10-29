@@ -1,0 +1,209 @@
+body {
+    background-color: #dfeeff;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.topbar {
+    background-color: darkblue;
+    min-height: 65px;
+    color: white;
+}
+
+.brand-light {
+    color: lightblue;
+}
+
+.admin-profile {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-profile span,
+.admin-profile small {
+    display: block;
+}
+
+.admin-profile span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.admin-profile small {
+    color: lightblue;
+    font-size: 11px;
+}
+
+.admin-avatar {
+    background-color: royalblue;
+    color: white;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.sidebar {
+    background-color: #fff;
+    min-height: calc(100vh - 65px);
+    border-right: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: cornflowerblue;
+    padding: 12px 14px;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    background-color: #eef3ff;
+    color: cornflowerblue;
+}
+
+.stat-card {
+    border: 1px solid #e8ebff;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(35, 64, 120, 0.12);
+}
+
+.stat-card .card-body {
+    padding: 22px;
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.tabel-laporan thead th {
+    color: deepskyblue;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.stat-atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-label {
+    color: slategray;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.stat-number {
+    margin-bottom: 8px;
+}
+
+.lingkaran-progres {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.progres-biru {
+    background: conic-gradient(royalblue 0% 75%, #dfe3ea 75% 100%);
+}
+
+.progres-hijau {
+    background: conic-gradient(greenyellow 0% 50%, #dfe3ea 50% 100%);
+}
+
+.progres-ungu {
+    background: conic-gradient(violet 0% 25%, #dfe3ea 25% 100%);
+}
+
+.progres-kuning {
+    background: conic-gradient(yellow 0% 100%, #dfe3ea 100% 100%);
+}
+
+.isi-lingkaran {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.garis-progres {
+    height: 7px;
+    background-color: #edf1f7;
+    margin-top: 18px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.isi-garis {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.garis-biru {
+    width: 75%;
+    background-color: royalblue;
+}
+
+.garis-hijau {
+    width: 50%;
+    background-color: greenyellow;
+}
+
+.garis-ungu {
+    width: 25%;
+    background-color: violet;
+}
+
+.garis-kuning {
+    width: 100%;
+    background-color: yellow;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.area-grafik {
+    position: relative;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+}
